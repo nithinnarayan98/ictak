@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,18 +8,18 @@
 </head>
 <body>
  <table>
-     <tr><td>name</td><td><input type="text"></td></tr>
+     <tr><td>name</td><td><input class="form-control" type="text"></td></tr>
      <tr><td>branch</td><td><select name="branch"id="branch1">
          <option value="cse">cse</option>
          <option value="ite">ite</option>
          <option value="ece">ece</option></select>
      </td></tr>
-     <tr><td>dob</td><td><input type="date" ></td></tr><tr><td>age</td>
+     <tr><td>dob</td><td><input class="form-control" type="date" ></td></tr><tr><td>age</td>
     <td><input type="number"min="18"max="50"></td></tr>
     <tr><td>gender</td><td><input type="radio"name="male"id="male">male</td>
     <td><input type="radio"name="female"id="female">female</td></tr>
-    <tr><td><input type="button" value="submit"></td></tr>
-    <tr><td><input type="checkbox">agree to tc</td></tr>
+    <tr><td><input class="btn btn-danger" type="button" value="submit"></td></tr>
+    <tr><td><input  type="checkbox">agree to tc</td></tr>
     </table>
  
 </body>
