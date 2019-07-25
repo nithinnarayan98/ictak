@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+     var i=0;
+    var mm=Array();
+   
+    function gn()
+{   
+    
+  mn=document.getElementById("m").value;
+mm[i]=mn;
+i++;
+var res="";
+for(var j=0;j<mm.length;j++)
+{res+=mm[j]+"<br>";
+
+}
+
+document.getElementById("mo").innerHTML=res;
+}
+</script>
+
+
+</head>
+<body><form action="">
+   <div class="container">
+       <div class="row">
+          <div><table class="table">
+              <tr>
+                  <td>movie name</td>
+                  <td>
+                      <input type="text"class="form-control"id="m">
+                  </td></tr>
+              <tr> <td><td>  
+
+                  </td>
+              </tr>
+
+<tr>
+    <td> <button type="button"class="btn btn-warning"id="bb"onclick="gn();">submit</button> </td>
+</tr>
+<tr><td id="mo"></td></tr>
+
+          </table>
+
+          </div> 
+
+       </div>
+
+   </div> </form>
+</body>
+</html>

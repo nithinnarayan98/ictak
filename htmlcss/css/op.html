@@ -5,59 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<script>
-function gn()
-    {
-        var x=parseInt(document.getElementById("n1").value);
-        var y=parseInt(document.getElementById("n2").value);
-        var op=document.getElementById("op").value;
-       
+<script src="../jss/opr.js">
 
-
-        if(op=="add")
-        {
-
-        var result=addnumbers(x,y);
-            document.getElementById("d").innerHTML=result;
-        }
-        else if(op=="sub")
-        { var result=subnumbers(x,y);
-            document.getElementById("d").innerHTML=result; 
-        }
-        else if(op=="mult")
-        {
-            var result=multnumbers(x,y);
-            document.getElementById("d").innerHTML=result;
-        }
-
-       else  
-        {
-            var result=divnumbers(x,y);
-            document.getElementById("d").innerHTML=result;
-        }
-        function addnumbers(a,b)
-        {var c=a+b;
-            return c;
-
-        }
-        function subnumbers(a,b)
-        {
-            var c=a-b;
-            return c;
-        }
-        function multnumbers(a,b)
-        {
-            var c=a*b;
-            return c;
-        }
-        function divnumbers(a,b)
-       {
-           var c=a/b;
-           return c;
-       }  
-        
-
-    }
 
 </script>
 
