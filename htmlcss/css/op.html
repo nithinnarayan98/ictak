@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+function gn()
+    {
+        var x=parseInt(document.getElementById("n1").value);
+        var y=parseInt(document.getElementById("n2").value);
+        var op=document.getElementById("op").value;
+       
+
+
+        if(op=="add")
+        {
+
+        var result=addnumbers(x,y);
+            document.getElementById("d").innerHTML=result;
+        }
+        else if(op=="sub")
+        { var result=subnumbers(x,y);
+            document.getElementById("d").innerHTML=result; 
+        }
+        else if(op=="mult")
+        {
+            var result=multnumbers(x,y);
+            document.getElementById("d").innerHTML=result;
+        }
+
+       else  
+        {
+            var result=divnumbers(x,y);
+            document.getElementById("d").innerHTML=result;
+        }
+        function addnumbers(a,b)
+        {var c=a+b;
+            return c;
+
+        }
+        function subnumbers(a,b)
+        {
+            var c=a-b;
+            return c;
+        }
+        function multnumbers(a,b)
+        {
+            var c=a*b;
+            return c;
+        }
+        function divnumbers(a,b)
+       {
+           var c=a/b;
+           return c;
+       }  
+        
+
+    }
+
+</script>
+
+
+</head>
+<body>
+    <form>
+    <table class="table">
+
+            <tr>
+                <td><label for="" id="lb1">number</label></td>
+                <td><input class="form-control" type="text"id="n1"></td></tr>
+            
+                <tr><td><label for="" id="lb2">number2</label></td><td><input type="text"id="n2"></td></tr>
+                <tr>
+                    <td><label for="" id="lb3"></label>operations</td>
+
+                    <td><select name="operation"id="op" onchange="gn();">
+                            <option value="add">add</option>
+                            <option value="sub">sub</option>
+                            <option value="mult">mult</option>
+                        <option value="div">div</option>
+                    </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td id="d"></td>
+                </tr>
+                
+
+    </table></form>
+    
+</body>
+</html>
