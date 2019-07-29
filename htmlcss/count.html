@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    count=0;
+$("#clk").click(function(){
+    count++;
+    $("#p1").text("click"+count+"times");
+    if(count==10)
+    {
+        $("clk").prop('disabled',true);
+    }
+}
+)
+    
+})
+
+
+
+</script>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+<button id="clk">click me</button>
+      
+<p id="p1">
+
+</p></div>
+
+   </div> 
+</body>
+</html>
